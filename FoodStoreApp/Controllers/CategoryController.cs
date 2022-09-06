@@ -49,6 +49,18 @@ namespace FoodStoreApp.Controllers
         }
 
 
+        //POST - EDIT
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Category cat)
+        {
+
+            _db.Category.Update(cat);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+
         //GET - DELETE
         public IActionResult Delete(int? id)
         {
