@@ -1,4 +1,4 @@
-﻿@model FoodStoreApp.Models.Category
+﻿@model FoodStoreApp.Models.Manufacture
 
 <form method="post">
     <input asp-for="Id" hidden />
@@ -33,7 +33,7 @@
                     <div class="col-8 offset-4 row">
 
                         <div class="col">
-                            <input type="submit" class="btn btn-info w-100" value="Обновить" />
+                            <input type="submit" class="btn btn-info w-100" value="Изменить" />
                         </div>
                         <div class="col">
                             <a asp-action="Index" class="btn btn-success w-100"><i class="fas fa-sign-out-alt"></i> Назад</a>
@@ -47,6 +47,3 @@
     </div>
 
 </form>
-
-
-
