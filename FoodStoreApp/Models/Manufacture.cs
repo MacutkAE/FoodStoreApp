@@ -11,6 +11,7 @@ namespace FoodStoreApp.Models
         [Required(ErrorMessage = "Поле не может быть пустым")]
         [DisplayName("Название")]
         public string? Title { get; set; }
+        [Required(ErrorMessage = "Поле не может быть пустым")]
         [DisplayName("Описание")]
         public string Description { get; set; }
         [DisplayName("Рэйтинг")]
