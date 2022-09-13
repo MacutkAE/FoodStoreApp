@@ -52,15 +52,15 @@ namespace FoodStoreApp.Controllers
         //POST - EDIT
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category cat)
+        public IActionResult Edit(Manufacture manufacture)
         {
             if (ModelState.IsValid)
             {
-                _db.Category.Update(cat);
+                _db.Manufacture.Update(manufacture);
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(cat);
+            return View(manufacture);
         }
 
 
